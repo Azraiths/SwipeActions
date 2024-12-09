@@ -1456,7 +1456,7 @@ fileprivate struct ConfigurableGesturePriority: ViewModifier {
             case .high:
                 AnyView(content.highPriorityGesture(gesture, including: mask))
             case .normal:
-                AnyView(content.gesture(gesture, including: mask))
+                AnyView(content.simultaneousGesture(gesture, including: mask))
         }
     }
 }
